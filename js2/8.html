@@ -1,0 +1,14 @@
+<script>
+    var num = +prompt("Введите число которое нужно возвести в степень 2: ")
+    function power(val, pow) {
+        if (val > 100000) {
+            number = val;
+        } else {
+            var k = Math.pow(val, pow);
+            power(k, pow);
+        }
+    }
+    power(num, 2);
+    alert(number);
+
+</script>

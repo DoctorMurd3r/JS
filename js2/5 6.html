@@ -1,0 +1,61 @@
+<script>
+    // 5 задание
+
+    function plus(x, y) {
+        res = x + y;
+        return res;
+    }
+
+    function minus(x, y) {
+        res = x - y;
+        return res;
+    }
+
+    function multiply(x, y) {
+        res = x * y;
+        return res;
+    }
+
+    function divide(x, y) {
+        res = x / y;
+        return res;
+    }
+
+
+    /*--------------------------------------------------*/
+
+    // 6 задание
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case ("plus"): {
+                plus(arg1, arg2);
+                return res;
+            }
+            case ("minus"): {
+                minus(arg1, arg2);
+                return res;
+            }
+            case ("multiply"): {
+                multiply(arg1, arg2);
+                return res;
+            }
+            case ("divide"): {
+                divide(arg1, arg2);
+                return res;
+            }
+
+        }
+    }
+    // проверка
+    mathOperation(10, 25, "multiply");
+    alert(res);
+    mathOperation(10, 25, "divide");
+    alert(res);
+    mathOperation(10, 25, "minus");
+    alert(res);
+    mathOperation(10, 25, "plus");
+    alert(res);
+
+
+</script>
